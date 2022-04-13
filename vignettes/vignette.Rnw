@@ -5,9 +5,6 @@
 \documentclass[a4paper]{article}
 \usepackage{url}
 
-<<style-Sweave, eval=TRUE, echo=FALSE, results=tex>>=
-BiocStyle::latex()
-@
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
@@ -39,7 +36,7 @@ number of signatures.
 \section{Installation}
 Installing the SUITOR package from Bioconductor.
 \subsection{Install from Bioconductor}
-<<install subHMM, eval=FALSE>>=
+<<install SUITOR, eval=FALSE>>=
     if (!requireNamespace("BiocManager", quietly = TRUE)) 
         install.packages("BiocManager") 
     BiocManager::install("SUITOR") 

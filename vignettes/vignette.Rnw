@@ -139,7 +139,7 @@ may be used for $n.cores$.
 \section{Running suitor() with the default options}
 First we start with the default options. Note that this will take a while to
 run, so we will load the previously saved results.
-<<suitor_default, eval=FALSE>>=
+<<suitor_default, eval=FALSE, include=FALSE>>=
 set.seed(123)
 re <- suitor(SimData)
 @
@@ -161,7 +161,7 @@ To run the function $suitor()$ with different option values discussed above,
 we create a list of options as follows. Note that the names in the option list
 should be matched with names in the table of options above. Again, given the 
 time it takes to run, previously saved results will be loaded.
-<<suitor_options, eval=FALSE>>=
+<<suitor_options, eval=FALSE, include=FALSE>>=
 OP  <- list(min.rank=5, max.rank=13, k.fold=5, n.seeds=50, get.summary=0)
 set.seed(123)
 re2 <- suitor(SimData, op=OP)
@@ -204,7 +204,7 @@ $print$       & 0 or 1 to print info (0=no printing)       & 1             \\
 \hline
 \end{tabular} \newline
 
-<<suitorExtractWH, eval=FALSE>>=
+<<suitorExtractWH, eval=FALSE, include=FALSE>>=
 re$rank
 set.seed(123)
 Extract <- suitorExtractWH(SimData, re$rank)
